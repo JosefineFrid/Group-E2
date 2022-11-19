@@ -1,17 +1,24 @@
 24/10 First meeting with the group
-We decided to try graphs that would use similar algorithms in hope if that the problems we run into will be very similar. Our workplan is to create graph 3.2 and 3.4. The temperature for every day of the year and the mean temperature of each year. Our "own" graph will be the mean temperature of each month in a year. We have decided to use the weather data from Lund.
+We decided to try graphs that would use similar algorithms in hope if that the problems we run into will be very similar. Our workplan is to create graph 3.2 and 3.4. The temperature for every day of the year and the mean temperature of each year. 
+Our "own" graph will be the mean temperature of each month in a year. We have decided to use the weather data from Lund.
 
 13/11 Starting the project
-Running into the first problem: fixing the data file. The first thought was using the csv parser from tutorial 11 to try and clean up the data. But after running into truoubles of loading it and asking for help from Einar I was told that you could clean up the data with bash and I found the casestudy exercise in tutorial 3.
+Running into the first problem: fixing the data file. The first thought was using the csv parser from tutorial 11 to try and clean up the data. 
+But after running into truoubles of loading it and asking for help from Einar I was told that you could clean up the data with bash and I found the casestudy exercise in tutorial 3.
 
 14/11 Starting cleaning up the data
 I started cleaning the data by starting the exercise and filling in the file with the code. I made it to filling in to T5.
 
 15/11
-I continued on the file and when I tried to run it and noticed that it didn't act like I wanted. The SMHIINPUT was empty. I wrote to Florido and got the answer that the implementation was wrong. In the answer I also got the information that the solution was already posted and that I could use that. Now I had to figure out how to get the data I wanted from the clean up to the graph. After trying to understand how to download the csv library I was a bit unsure of how I would even get the data I wanted after being able to run it. I got the idea that I could use bash again and clean it up even more.
+I continued on the file and when I tried to run it and noticed that it didn't act like I wanted. The SMHIINPUT was empty. 
+I wrote to Florido and got the answer that the implementation was wrong. In the answer I also got the information that the solution was already posted and that I could use that. 
+Now I had to figure out how to get the data I wanted from the clean up to the graph. After trying to understand how to download the csv library I was a bit unsure of how I would even get the data I wanted after being able to run it. 
+I got the idea that I could use bash again and clean it up even more.
 
 16/11
-I wrote the whole clean up program in bash, that also is doing the calculation for the graph. In the final datafile the x-values is the month and y-values is the average temperature in that month. I also created the ROOT-file, what is left is trying to connect these two files and creating a gaussian.
+I wrote the whole clean up program in bash, that also is doing the calculation for the graph. In the final datafile the x-values is the month and y-values is the average temperature in that month. 
+I also created the ROOT-file, what is left is trying to connect these two files and creating a gaussian.
 
 17/11
-Haven't been able to connect the files, after being in touch with Einar he answerd that is seems to be something wrong with aurora. I changed the graph from a histogram to a normal graph and added a gaussian to it. I also started writing on the report.
+Haven't been able to connect the files, after being in touch with Einar he answerd that is seems to be something wrong with aurora. 
+I changed the graph from a histogram to a normal graph and added a gaussian to it. I also started writing on the report.
