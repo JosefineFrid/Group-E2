@@ -18,9 +18,9 @@ To run the cleanup2 program you type in the year that you would like to create a
 To run it you write ./cleanup2.sh year in the command line.
 For example: ./cleanup2.sh 1900
 
-The output file that you will use for the ROOT program is: tempMonth_year, in the example the output file would be tempMonth_1900.
+The output file that you will use for the ROOT program is: tempMonth_year, in the example the final output file would be tempMonth_1900.
 
-To create the graph you have to enter root in the shell. Load the program and then execute it and adding the tempMonth_year file from cleanup2.sh.
+To create the graph you have to enter root in the shell. Load the program and then execute it with the tempMonth_year file as argument.
 For example:
 root
 .L graph_tempMonth.C
