@@ -11,6 +11,7 @@ The output file rawdata_smhi-opendata_1_52230_20210906_212532.csv is what you wi
 The file is already in the program, you will have to change the path if it doesn't correspond with what is in the file. This is what is written in the cleanup2 file:
 
 SOURCEFILE=src/rawdata_smhi-opendata_1_53430_20210926_101122_Lund.csv
+
 DATAFILE=rawdata_smhi-opendata_1_53430_20210926_101122_Lund.csv
 
 To run the cleanup2 program you type in the year that you would like to create a graph for. You can choose any year between 1863-2020.
