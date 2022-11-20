@@ -4,6 +4,7 @@ Project in MNXB01.
 How to use the program: 
 First start with the first clean up program from tutorial 3 that is used to get rid of irrelevant data.
 First you clean up the data with cleanup1.sh and the input the datafile, write in the command line: ./cleanup1.sh path/smhi-opendata_1_53430_20210926_101122_Lund.csv
+
 For example: ./cleanup1.sh /home/josefine9/tutorial3/casestudy/data/smhi-opendata_1_52230_20210906_212532.csv
 
 The output file rawdata_smhi-opendata_1_52230_20210906_212532.csv is what you will use in the next clean up file.
