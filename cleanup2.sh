@@ -8,8 +8,6 @@ INPUTYEAR=$1
 SOURCEFILE=src/rawdata_smhi-opendata_1_53430_20210926_101122_Lund.csv
 DATAFILE=rawdata_smhi-opendata_1_53430_20210926_101122_Lund.csv
 
-################################## TAKE AWAY Y VALUES #############################
-
 if [[ "x$INPUTYEAR" == 'x' ]]; then
    echo "Missing input year, exiting"
    exit 1
@@ -139,6 +137,7 @@ LASTLINEDEC=$(grep -n "$INPUTYEAR-12" version2_${DATAFILE} | cut -d ":" -f 1 | t
 NUMBEROFTEMPDEC=$(( $LASTLINEDEC - $STARTLINEDEC ))
 AVERAGETEMPDEC=$(echo "scale=2; $TOTALTEMPDEC / $NUMBEROFTEMPDEC" | bc -l | sed -e 's/^-\./-0./' -e 's/^\./0./')
 
+## Add in all the average values in each month in a data file.
 echo -e "1 $AVERAGETEMPJAN\n2 $AVERAGETEMPFEB\n3 $AVERAGETEMPMAR\n4 $AVERAGETEMPAPR\n5 $AVERAGETEMPMAY\n6 $AVERAGETEMPJUN\n7 $AVERAGETEMPJUL\n8 $AVERAGETEMPAUG\n9 $AVERAGETEMPSEP\n10 $AVERAGETEMPOCT\n11 $AVERAGETEMPNOV\n12 $AVERAGETEMPDEC" > tempMonth_$INPUTYEAR
 
 
